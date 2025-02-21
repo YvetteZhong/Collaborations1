@@ -1,0 +1,217 @@
+/* styles.css */
+.tabs {
+    position: fixed; /* 固定定位 */
+    top: 0; /* 距离顶部0像素 */
+    left: 0; /* 距离左侧0像素，可根据需要调整 */
+    width: 100%; /* 宽度100%，可根据需要调整 */
+    text-align: center; /* 文字居中 */
+    padding: 10px 0; /* 内边距 */
+    z-index: 1000; /* 确保在其他内容之上 */
+}
+.tabs:hover {
+    background-color: white;
+}
+.tabs:hover .tab-btn {
+    color: black; /* 鼠标悬停时改变字体颜色 */
+    font-weight: bold; /* 鼠标悬停时改变字体粗细 */
+}
+.tab-btn {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    padding: 5px 8px;
+    margin-left: 150px;
+}
+.tab-btn.active {
+    color: rgb(55, 132, 162);
+}
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+    border-top: nonex;
+    width: auto; /* 广告容器宽度 */
+    overflow: hidden; /* 隐藏超出部分 */
+    position: relative;
+    text-align: center;
+    background-color: rgb(255,240,225);
+}
+.tab-icon {
+    width: 60px;
+    height: 30px;
+    margin-left: 12px;
+    margin-right: 12px;
+    fill: currentColor;
+    transition: all 0.3s; /* 悬停放大 */
+    transform: scale(1.6);
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1)); /* 内阴影效果 */
+}
+.tab-btn.active .tab-icon {
+    /* 外发光效果 */
+    filter: drop-shadow(0 0 6px rgba(33,150,243,0.5)) brightness(1.2);
+}
+.tab-btn:hover .tab-icon {
+    transform: scale(2.2);
+    filter: drop-shadow(0 3px 6px rgba(243, 4, 4, 0.92));
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  .image-container img {
+    display: block;
+    width: 100%; /* 或者指定具体的宽度 */
+  }
+  .image-container .text {
+    position: absolute;
+    color: white; /* 文字颜色 */
+    font-size: 46px; /* 文字大小 */
+    font-family: "Times New Roman";
+    font-weight: bolder;
+}
+
+.content-box {
+    border: 1px solid #e0e0e0; /* 边框颜色 */
+    border-radius: 38px; /* 圆角（可选） */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 阴影（可选） */
+    background-color: white;
+}
+
+.n0-text {
+    font-size: 18px;
+    font-family:'Segoe UI';
+    text-align: left;
+    color:rgb(204, 154, 125);
+    line-height: 2;
+    margin: 2% 6%;
+}
+.n1-text {
+    font-size: 23px;
+    font-family: 'Microsoft JhengHei UI';
+    font-weight: 600;
+    color:rgb(33, 25, 21);
+    text-align: justify;
+    line-height: 2;
+    margin: 1% 5%;
+}
+.n2-text {
+    font-size: 32px;
+    font-family: 'Segoe Print';
+    font-weight: 600;
+    color:rgb(142, 66, 33);
+    text-align: justify;
+    margin: 1% 5%;
+}
+.n3-text {
+    font-size: 20px;
+    font-family:'Segoe UI';
+    color:rgb(44, 24, 20);
+    text-align: justify;
+    line-height: 2;
+    margin: 1% 5%;
+}
+.n3-text-left {
+    font-size: 20px;
+    font-family:'Segoe UI';
+    color:rgb(44, 24, 20);
+    text-align: left;
+    line-height: 2;
+    margin: 1% 5%;
+}
+.n3-text-right {
+    font-size: 20px;
+    font-family:'Segoe UI';
+    color:rgb(44, 24, 20);
+    text-align: right;
+    line-height: 1.5;
+    margin: 1% 5%;
+}
+
+/*surveyForm*/ 
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    margin: 1% 10%;
+}
+h2 {
+    color: #2c3e50;
+    border-bottom: 0px solid #3498db;
+    padding-bottom: 5px;
+}
+label {
+    display: block;
+    margin: 10px 0;
+}
+button {
+    background-color: #3498db;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #2980b9;
+}
+#resultContainer {
+    display: none;
+    background-color: #e8f4ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/*postform*/
+.post-form {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.posts-container {
+    margin-top: 30px;
+}
+.post {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.post h3 {
+    margin-top: 0;
+    color: #333;
+}
+.post p {
+    color: #666;
+    line-height: 1.6;
+}
+.post-time {
+    color: #999;
+    font-size: 0.9em;
+}
+.delete-btn {
+    background: #dc3545;
+    margin-top: 10px;
+}
